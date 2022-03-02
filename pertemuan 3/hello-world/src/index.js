@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import HelloComponent from "./component/HelloComponent";
 import reportWebVitals from './reportWebVitals';
+import LoginComponent from "./component/LoginComponent";
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <HelloComponent />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+  <React.StrictMode>
+    <LoginComponent />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 // function HelloComponent() {
 //   return HelloComponent
@@ -26,47 +27,49 @@ import reportWebVitals from './reportWebVitals';
 // }
 // ReactDOM.render(<StateFullComponent/>, document.getElementById('root'))
 
-class Test extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hello: "World!" };
-  }
+// class Test extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { hello: "World!" };
+//   }
 
-  componentWillMount() {
-    console.log("componentWillMount()");
-  }
-  componentDidMount() {
-    console.log("componentDidMount()");
-  }
+//   componentWillMount() {
+//     console.log("componentWillMount()");
+//   }
+//   componentDidMount() {
+//     console.log("componentDidMount()");
+//   }
 
-  changeState() {
-    this.setState({ hello: "Geek!" });
-  }
-  render() {
-    return (
-      <div>
-        <h1>GeeksForGeeks.org, Hello{this.state.hello}</h1>
-        <h2>
-          <a onClick={this.changeState.bind(this)}>Press Here!</a>
-        </h2>
-      </div>
-    );
-  }
+//   changeState() {
+//     this.setState({ hello: "Geek!" });
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>GeeksForGeeks.org, Hello{this.state.hello}</h1>
+//         <h2>
+//           <a onClick={this.changeState.bind(this)}>Press Here!</a>
+//         </h2>
+//       </div>
+//     );
+//   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log("shouldComponentUpdate()");
-    return true;
-  }
+//   shouldComponentUpdate(nextProps, nextState) {
+//     console.log("shouldComponentUpdate()");
+//     return true;
+//   }
 
-  componentWillUpdate() {
-    console.log("componentWillUpdate()");
-  }
+//   componentWillUpdate() {
+//     console.log("componentWillUpdate()");
+//   }
 
-  componentDidUpdate() {
-    console.log("componentDidUpdate()");
-  }
-}
+//   componentDidUpdate() {
+//     console.log("componentDidUpdate()");
+//   }
+// }
 
-ReactDOM.render(<Test />, document.getElementById("root"));
+// ReactDOM.render(<Test />, document.getElementById("root"));
+
+// ReactDOM.render(<LoginComponent />, document.getElementById("root"));
 
 reportWebVitals();
