@@ -2,28 +2,28 @@ import React from 'react';
 import ReactDOM, { render } from 'react-dom';
 import './index.css';
 import App from './App';
+import HelloComponent from "./component/HelloComponent";
 import reportWebVitals from './reportWebVitals';
 
 // ReactDOM.render(
 //   <React.StrictMode>
-//     <App />
+//     <HelloComponent />
 //   </React.StrictMode>,
 //   document.getElementById('root')
 // );
 
 // function HelloComponent() {
 //   return HelloComponent
-//   ReactDOM.render(<HelloComponent/>, document.getElementById('root'));
 // }
+// ReactDOM.render(<HelloComponent/>, document.getElementById('root'));
 
 // const HelloComponent = () => {return HelloComponent}
 
 // class StateFullComponent extends React.Component{
 //   render(){
-//     return <p>stateFullComponent</p>;
+//     return <p>stateFullComponent...</p>;
 //   }
 // }
-
 // ReactDOM.render(<StateFullComponent/>, document.getElementById('root'))
 
 class Test extends React.Component {
