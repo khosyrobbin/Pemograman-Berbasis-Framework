@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const Hello = () => {
-  return <h2>Hello world</h2>
+  return <h2>Hello World</h2>
 }
 
 ReactDOM.render(
