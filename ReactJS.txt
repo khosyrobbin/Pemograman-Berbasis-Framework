@@ -1,0 +1,5 @@
+npm install -g create-react-app
+create-react-app web-reactku
+
+cd smstr 6\pemograman berbasis framework\
+json-server -p 3001 -w listArtikel.json
