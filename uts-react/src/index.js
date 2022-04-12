@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-awesome-button/src/styles/styles.scss";
+import "react-awesome-button/src/styles/themes/theme-rickiest"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

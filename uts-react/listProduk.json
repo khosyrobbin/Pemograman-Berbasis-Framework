@@ -1,0 +1,67 @@
+{
+    "kipasAngin": [
+      {
+        "id": 1,
+        "nama": "Kipas Angin Cosmos 12-LDA 12 Inch",
+        "harga": 199000,
+        "gambar": "https://images.tokopedia.net/img/cache/700/product-1/2019/2/13/1687614/1687614_ba29a1f1-b0b8-4222-bd6d-0070b077e2a2_800_800.jpg",
+        "stok": 25
+      },
+      {
+        "id": 2,
+        "nama": "Desk Fan Miyako KAD 1227 B [45 Watt]",
+        "harga": 188000,
+        "gambar": "https://images.tokopedia.net/img/cache/500-square/product-1/2017/12/5/1687614/1687614_c91d54fd-f305-430e-b1cd-a18445ebcdec_800_800.jpg",
+        "stok": 30
+      },
+      {
+        "id": 3,
+        "nama": "Robot RT-BF11 Kipas Angin Portable Mini Fan & Powerbank 2000mAh",
+        "harga": 95000,
+        "gambar": "data:image/jpeg;base64,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",
+        "stok": 50
+      },
+      {
+        "id": 4,
+        "nama": "MASPION Kipas Angin Listrik Portable",
+        "harga": 75000,
+        "gambar": "https://tokoonline88.com/wp-content/uploads/2018/07/kipas-angin-listrik.jpg",
+        "stok": 80
+      },
+      {
+        "id": 5,
+        "nama": "Kipas Angin Regency Tornado Fan Deluxe DLX 16 Inch",
+        "harga": 448000,
+        "gambar": "https://images.tokopedia.net/img/cache/700/product-1/2018/1/16/1687614/1687614_cc0f74a4-5daa-48eb-a7c7-a95d93b89aff_480_480.jpg",
+        "stok": 50
+      },
+      {
+        "id": 6,
+        "nama": "Kris Tower Kipas Angin Lantai",
+        "harga": 210000,
+        "gambar": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//95/MTA-7251836/kris_kris_kipas_angin_lantai_tower_berdiri_-_krisbow_kipas_angin_lantai_towr_bediri_full01_qgcy24ws.jpg",
+        "stok": 45
+      },
+      {
+        "id": 7,
+        "nama": "Kipas Angin Meja 35w mini Slim oware50",
+        "harga": 110000,
+        "gambar": "https://s3.bukalapak.com/img/8836643813/large/Kipas_Angin_Meja_35w_Slim_.jpg",
+        "stok": 35
+      },
+      {
+        "id": 8,
+        "nama": "Kipas angin jadul national (vintage)",
+        "harga": 640000,
+        "gambar": "https://media.karousell.com/media/photos/products/2021/1/4/kipas_angin_jadul_national_vin_1609727987_0d056c16_progressive.jpg",
+        "stok": 50
+      },
+      {
+        "id": 9,
+        "nama": "Panasonic Wall Fan EU409 – Kipas Angin Dinding 16 inch EU-409",
+        "harga": 420000,
+        "gambar": "https://cf.shopee.co.id/file/4e934edafe519f32d19e8bb4a6be618c",
+        "stok": 50
+      }
+    ]
+  }
