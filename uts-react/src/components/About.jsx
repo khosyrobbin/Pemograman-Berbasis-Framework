@@ -13,7 +13,7 @@ class About extends Component {
           className="my-5 rounded-circle"
         ></img>
         <h1>Khosy Robbin Hood</h1>
-        <h3>TI-3D / 1841720078</h3>
+        <h3>TI-3D / 1941720067</h3>
         <h3>Teknik Informatika</h3>
       </div>
     );
