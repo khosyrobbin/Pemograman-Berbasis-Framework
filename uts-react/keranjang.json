@@ -8,18 +8,11 @@
       "qty": 1
     },
     {
-      "id": 8,
-      "nama": "Kipas angin jadul national (vintage)",
-      "harga": 640000,
-      "stok": 50,
-      "qty": 1
-    },
-    {
-      "id": 6,
-      "nama": "Kris Tower Kipas Angin Lantai",
-      "harga": 210000,
-      "stok": 45,
-      "qty": 2
+      "id": 2,
+      "nama": "Desk Fan Miyako KAD 1227 B [45 Watt]",
+      "harga": 188000,
+      "stok": 30,
+      "qty": 3
     }
   ]
 }
