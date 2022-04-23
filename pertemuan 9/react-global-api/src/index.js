@@ -5,7 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import BlogPost from "./container/BlogPost/BlogPost";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import BlogMahasiswa from "./container/BlogMahasiswa/BlogMahasiswa";
+import BlogMahasiswa from "./container/BlogMahasiswa/BlogMahasiswa";
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //   </React.StrictMode>
 // );
 
-ReactDOM.render(<BlogPost/>, document.getElementById('content'));
+ReactDOM.render(<BlogMahasiswa/>, document.getElementById('content'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
