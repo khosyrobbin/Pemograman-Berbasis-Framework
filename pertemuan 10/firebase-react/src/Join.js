@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
-import { AuthContext } from "./index.js";
-import firebase from "firebase/app";
-import "firebase/auth";
+import { AuthContext } from "./index";
+import firebase from "firebase";
 
 const Join = () => {
   const [email, setEmail] = useState("");
@@ -11,8 +10,25 @@ const Join = () => {
   const Auth = useContext(AuthContext);
   const handleForm = (e) => {
     e.preventDefault();
-    console.log(Auth);
-    Auth.setLoggedIn(true);
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then((res) => {
+        if (res.user) Auth.setLoggedIn(true);
+      })
+      .catch((e) => {
+        setError(e.message);
+      });
+  };
+  const googleJoin = () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then((res) => {
+        console.log(res);
+        Auth.setLoggedIn(true);
+      });
   };
 
   return (
@@ -37,6 +53,7 @@ const Join = () => {
         <button
           className="googleBtn"
           type="button"
+          onClick={() => googleJoin()}
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
