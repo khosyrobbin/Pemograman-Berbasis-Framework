@@ -4,7 +4,6 @@ import Post from "../../component/BlogPost/Post.jsx";
 // import API from "../../services";
 import firebase from 'firebase/compat/app';
 import firebaseConfig from '../../firebase/firebase';
-//import firebaseConfig from "../../firebase/config";
 import 'firebase/compat/database';
 
 class BlogPost extends Component {
