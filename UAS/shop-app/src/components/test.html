@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div className="container">
+        <div className="row align-items-right">
+            <div className="col-auto pr-5" >
+                <h1 className="line-height-1 mt-5 mb-3">
+                    Selamat Datang di <br />
+                    Toko Dewa Kipas⚡️<br />
+                </h1>
+                <p className="mb-4 font-weight-light w-75" >
+                    Kipas kita <br /> Produk para Dewa
+                </p>
+                {currentUser ? (
+                <p>
+                    You are logged -
+                    <Link to="/dashboard">View Dashboard</Link>
+                </p>
+                ) : (
+                <p>
+                    <Link to="/login">Log In</Link> or
+                    <Link to="/signup">Sign Up</Link>
+                </p>
+                )}
+            </div>
+            <div className="fas fa-align-right">
+                <div>
+                    <img src="../img/shoes.png" alt="Sepatu" className="img-fluid position-absolute" align="right"  />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
