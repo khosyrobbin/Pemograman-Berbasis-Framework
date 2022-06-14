@@ -4,6 +4,11 @@ import { AuthContext } from "./Auth";
 import firebaseConfig from "../config.js";
 import "./Login.css";
 
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
+import Sepatu from "../img/shoes.png";
+
+
 const LogIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,8 +28,8 @@ const LogIn = () => {
         <>
             {/* <h1>Log In</h1>
             <form onSubmit={handleSubmit}>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Email" />
+                <label for="email"><AwesomeButton type="secondary">Email</AwesomeButton></label>
+                <input type="email" name="email" placeholder="Email"/>
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Password" />
                 <button type="submit">Submit</button>
