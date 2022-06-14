@@ -9,6 +9,13 @@ const Home = () => {
     const { currentUser } = useContext(AuthContext);
     return (
         <>
+
+        <div className="home-page">
+            <center>
+            <h1>WELCOME!</h1>
+            <p>Do you want to Log In or Sign Up?</p>
+            {currentUser ? (
+=======
             <html>
                 <body>
                     <div className="container">
@@ -53,6 +60,7 @@ const Home = () => {
             </html>
 
             {/* {currentUser ? (
+
                 <p>
                     You are logged - <Link to="/dashboard">View Dashboard</Link>
                 </p>
@@ -60,7 +68,13 @@ const Home = () => {
                 <p>
                     <Link to="/login">Log In</Link> or <Link to="/signup">Sign Up</Link>
                 </p>
+
+            )}
+            </center>
+        </div>
+=======
             )} */}
+
         </>
     );
 };

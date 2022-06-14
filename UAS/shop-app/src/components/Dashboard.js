@@ -4,6 +4,8 @@ import { AuthContext } from "./Auth";
 import firebaseConfig from "../config.js";
 import HeroBanner from "./hero-banner/Hero-banner";
 import Navigation from "./navigation/Navigation";
+import { AuthProvider } from "./Auth";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const Dashboard = () => {
     const { currentUser } = useContext(AuthContext);
@@ -11,9 +13,11 @@ const Dashboard = () => {
         return <Redirect to="/login" />;
     }
     return (
-        <div>
-            <HeroBanner />
-        </div>
+        <Router>
+            <Switch>
+                <HeroBanner />
+            </Switch>
+        </Router>
     );
 };
 
