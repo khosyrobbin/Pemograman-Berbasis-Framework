@@ -41,7 +41,7 @@ const LogIn = () => {
                         <label><h1>Log In!</h1></label>
                     </div>
                     <div className="input-container">
-                        <label>Username </label>
+                        <label>Email </label>
                         <input type="text" name="email" required />
                     </div>
                     <div className="input-container">
@@ -49,7 +49,10 @@ const LogIn = () => {
                         <input type="password" name="password" required />
                     </div>
                     <div className="button-container">
-                        <input type="submit" value="Log In!" />
+                        <AwesomeButton type="link" value="Log In!">
+                            {/* <input type="submit" value="Log In!" /> */}
+                            Log In
+                        </AwesomeButton>
                     </div>
                 </form>
             </div>
