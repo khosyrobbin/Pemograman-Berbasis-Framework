@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './Hero-banner.css';
 import firebaseConfig from '../../config';
-import { connect } from 'react-redux';
+import { connect, BrowserRouter as Router, Route, Switch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { withRouter } from "react-router-dom";
 import CartWindow from '../cart-window/Cart-window';
 import Navigation from '../navigation/Navigation';
+import { Redirect } from "react-router-dom";
+import { AuthContext } from "../Auth"
 
 const HeroBanner = () => {
     return (
@@ -17,6 +19,7 @@ const HeroBanner = () => {
                         <li><Link to={`/ShopList`}>SHOP</Link></li>
                         <li><Link to={`/Profiles`}>PROFILE</Link></li>
                         <li><Link onClick={() => firebaseConfig.auth().signOut()}>SIGN OUT</Link></li>
+                        <li><Link to={`/Cart`}>CART</Link></li>
                     </ul>
                 </div>
                 <div className="text col-6 ">
