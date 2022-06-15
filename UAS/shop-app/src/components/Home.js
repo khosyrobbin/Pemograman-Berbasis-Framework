@@ -5,6 +5,7 @@ import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
 import Sepatu from "../img/shoes.png";
+import Yellow from "../img/yellow.png";
 
 const Home = () => {
     const { currentUser } = useContext(AuthContext);
@@ -36,14 +37,14 @@ const Home = () => {
                                     </p>
                                 )}
                                 <div className="col-6 pl-5">
-                                    <div style={{ width: 1100 }}>
-                                        <img
+                                    <div style={{ width: 10 }}>
+                                        {/* <img
                                             src={Sepatu}
                                             alt="Sepatu"
                                             className="img-fluid position-absolute"
                                             align="right"
                                             style={{  marginTop:"-290px"}}
-                                        />
+                                        /> */}
                                     </div>
                                 </div>
                             </div>
