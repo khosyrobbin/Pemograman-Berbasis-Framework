@@ -7,7 +7,7 @@ import { withRouter } from "react-router-dom";
 import CartWindow from '../cart-window/Cart-window';
 import Navigation from '../navigation/Navigation';
 import { Redirect } from "react-router-dom";
-import { AuthContext } from "../Auth"
+import { AuthContext } from "../Auth";
 
 const HeroBanner = () => {
     return (
