@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero-banner.css';
 import firebaseConfig from '../../config';
+import { AwesomeButton } from "react-awesome-button";
 
 const HeroBanner = () => {
 
