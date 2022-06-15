@@ -16,9 +16,9 @@ const HeroBanner = () => {
                 <div className="col-8 items">
                     <ul>
                         <li><Link to={`/`}>HOME</Link></li>
-                        <li><Link to={`/ShopList`}>SHOP</Link></li>
-                        <li><Link to={`/Profiles`}>PROFILE</Link></li>
-                        <li><Link to={`/Cart`}>CART</Link></li>
+                        <li><Link to={`/shopList`}>SHOP</Link></li>
+                        <li><Link to={`/profiles`}>PROFILE</Link></li>
+                        <li><Link to={`/cart`}>CART</Link></li>
                         <li><Link onClick={() => firebaseConfig.auth().signOut()}>SIGN OUT</Link></li>
                     </ul>
                 </div>
