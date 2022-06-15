@@ -5,14 +5,11 @@ import Dashboard from "./components/Dashboard";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp";
 import { AuthProvider } from "./components/Auth";
-
-import Bootstrap from "bootstrap/dist/css/bootstrap.css";
-import './App.css';
-import Category from "./components/category/Category";
 import Cart from "./components/cart/Cart";
-import Pofil from "./components/profile/Profiles";
-import Navigation from "./components/navigation/Navigation";
-import HomeContainer from "./components/home-container/Home-container";
+import Product from "./components/product/Product";
+import Profiles from "./components/profile/Profiles";
+import ShopList from "./components/shop-list/ShopList";
+
 
 
 const App = () => {
@@ -24,6 +21,10 @@ const App = () => {
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/login" component={LogIn} />
           <Route exact path="/signup" component={SignUp} />
+          <Route path="/cart" component={Cart} />
+          <Route path="/product/:id" component={Product} />
+          <Route path="/shoplist" component={ShopList} />
+          <Route path="/profiles" component={Profiles} />
         </Switch>
       </Router>
     </AuthProvider>

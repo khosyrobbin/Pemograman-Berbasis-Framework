@@ -5,7 +5,7 @@ import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
 import Sepatu from "../img/shoes.png";
-import Yellow from "../img/yellow.png";
+import "./Home.css";
 
 const Home = () => {
     const { currentUser } = useContext(AuthContext);
@@ -37,7 +37,7 @@ const Home = () => {
                                     </p>
                                 )}
                                 <div className="col-6 pl-5">
-                                    <div style={{ width: 10 }}>
+                                    <div style={{ width: 1100 }}>
                                         {/* <img
                                             src={Sepatu}
                                             alt="Sepatu"
@@ -53,16 +53,6 @@ const Home = () => {
                     </div>
                 </body>
             </html>
-
-            {/* {currentUser ? (
-                <p>
-                    You are logged - <Link to="/dashboard">View Dashboard</Link>
-                </p>
-            ) : (
-                <p>
-                    <Link to="/login">Log In</Link> or <Link to="/signup">Sign Up</Link>
-                </p>
-            )} */}
         </>
     );
 };

@@ -4,10 +4,6 @@ import HeroBanner from "../hero-banner/Hero-banner";
 import ItemList from "../item-list/ItemList";
 import './Home-container.css';
 import Bootstrap from "bootstrap/dist/css/bootstrap.css";
-//import './App.css';
-// import Category from "../category/Category"
-// import Cart from "../cart/Cart";
-// import Product from "../product/Product";
 
 
 class HomeContainer extends Component {
@@ -19,7 +15,6 @@ class HomeContainer extends Component {
         return (
             <div className="home-container">
                 <HeroBanner />
-                {this.props.products.products.length > 0 ? <ItemList products={this.props.products.products} /> : null}
             </div>
         );
     }

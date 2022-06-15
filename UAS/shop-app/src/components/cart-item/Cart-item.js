@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import CurrencyFormat from 'react-currency-format';
+import CurrencyFormat from 'react-currency-format';
 import { connect } from 'react-redux';
 import './Cart-item.css';
 
@@ -28,13 +28,13 @@ class CartItem extends Component {
                     <div className="col-4">
                         <p className="brand">{this.props.item.product.brand}</p>
                         <p className="title">{this.props.item.product.title}</p>
-                        {/* <CurrencyFormat value={this.props.item.product.price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} renderText={value => <p className="price">{value}</p>} /> */}
+                        <CurrencyFormat value={this.props.item.product.price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} renderText={value => <p className="price">{value}</p>} />
                     </div>
                     {!this.props.small ? <div className="col-2 input-wrap">
                         <input type="number" name="quantity" min="1" max="100" className="form-control" defaultValue={this.props.item.count} onChange={this.updateCount.bind(this)} />
                     </div> : null}
                     <div className="col-3 price-wrap">
-                        {/* <CurrencyFormat value={this.props.item.product.price * this.props.item.count} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} renderText={value => <p className="price">{value}</p>} /> */}
+                        <CurrencyFormat value={this.props.item.product.price * this.props.item.count} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} renderText={value => <p className="price">{value}</p>} />
                     </div>
                     <div className="col-1 action-wrap">
                         <button type="button" className="close" aria-label="Close" onClick={this.deleteItem.bind(this)}>

@@ -2,7 +2,7 @@
     height: 250px;
     padding: 20px;
     color: white;
-    background-image: url("../../media/plates-header.jpg");
+    /* background-image: url("../../media/plates-header.jpg"); */
     background-repeat: no-repeat, repeat;
     background-size: 260%;
     background-position-y: 40%;
@@ -12,7 +12,7 @@
     height: 250px;
     padding: 20px;
     color: white;
-    background-image: url("../../media/plates-header.jpg");
+    /* background-image: url("../../media/plates-header.jpg"); */
     background-repeat: no-repeat, repeat;
     background-size: 260%;
     background-position-y: 40%;
