@@ -17,7 +17,7 @@ const Dashboard = () => {
         <Router>
             <Switch>
                 <HeroBanner />
-                {/* <HomeContainer /> */}
+                <HomeContainer />
             </Switch>
         </Router>
     );
