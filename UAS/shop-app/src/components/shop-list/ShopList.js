@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import HeroBanner from "../hero-banner/Hero-banner";
+import './ShopList.css';
 import ItemList from "../item-list/ItemList";
-import './Home-container.css';
-import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+import { connect } from 'react-redux';
+import './ShopList.css';
 
 
-class HomeContainer extends Component {
+class ShopList extends Component {
     state = {
         products: []
     };
@@ -14,7 +13,7 @@ class HomeContainer extends Component {
     render() {
         return (
             <div className="home-container">
-                <HeroBanner />
+                 {this.props.products.products.length > 0 ? <ItemList products={this.props.products.products} /> : null} 
             </div>
         );
     }
@@ -25,4 +24,4 @@ const mapStoreToProps = (store) => {
 };
 
 
-export default connect(mapStoreToProps)(HomeContainer);
+export default connect(mapStoreToProps)(ShopList);
