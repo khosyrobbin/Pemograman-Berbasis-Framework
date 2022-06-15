@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "./Auth";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+
 import Sepatu from "../img/shoes.png";
+import Yellow from "../img/yellow.png";
 
 const Home = () => {
     const { currentUser } = useContext(AuthContext);
@@ -14,10 +16,10 @@ const Home = () => {
                     <div className="container">
                         <div className="row align-items-right">
                             <div className="col-auto pr-5" >
-                                <h1 className="line-height-1 mt-5 mb-3">
+                                <h1 className="line-height-1 mt-5 mb-3" style={{ fontFamily:"monospace", fontSize:40, fontWeight:"900", marginLeft:"30px"}}>
                                     Selamat Datang di Neo Ol-Shop⚡️<br />
                                 </h1>
-                                <h3 className="mb-4 font-weight-light w-75">
+                                <h3 className="mb-4 font-weight-light w-75" style={{ fontFamily:"monospace", fontSize:20, fontWeight:"900", marginLeft:"30px"}}>
                                     Silahkan Login Terlebih Dahulu Untuk Mengakses Neo Ol-Shop
                                 </h3>
                                 {currentUser ? (
@@ -25,24 +27,24 @@ const Home = () => {
                                         You are logged - <Link to="/dashboard">View Dashboard</Link>
                                     </p>
                                 ) : (
-                                    <p>
+                                    <p style={{margin: "20px 170px", marginTop:"50px"}}>
                                         <Link to="/login"> 
-                                        <AwesomeButton type="secondary">Log In</AwesomeButton>
-                                        </Link><br/>or<br/>
-                                        <Link to="/signup">
-                                            <AwesomeButton type="secondary">Register</AwesomeButton>
+                                        <AwesomeButton size="large" type="secondary"><h3>Log In</h3></AwesomeButton>
+                                        </Link><h3></h3><br/>
+                                        <Link to="/signup" style={{marginTop:"25px"}}>
+                                            <AwesomeButton size="large" type="secondary" ><h3>Register</h3></AwesomeButton>
                                         </Link>
                                     </p>
                                 )}
                                 <div className="col-6 pl-5">
-                                    <div style={{ width: 1100 }}>
-                                        <img
+                                    <div style={{ width: 10 }}>
+                                        {/* <img
                                             src={Sepatu}
                                             alt="Sepatu"
                                             className="img-fluid position-absolute"
                                             align="right"
-                                            style={{ margin: "-150px 0 0 -30px" }}
-                                        />
+                                            style={{  marginTop:"-290px"}}
+                                        /> */}
                                     </div>
                                 </div>
                             </div>

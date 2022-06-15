@@ -6,6 +6,13 @@ import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp";
 import { AuthProvider } from "./components/Auth";
 
+import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+import './App.css';
+import Category from "./components/category/Category";
+import Cart from "./components/cart/Cart";
+import Pofil from "./components/profile/Profiles";
+import Navigation from "./components/navigation/Navigation";
+import HomeContainer from "./components/home-container/Home-container";
 
 
 const App = () => {

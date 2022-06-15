@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+
+import ItemListReducer from './store/Item-list.reducer';
+import CartItemReducer from './store/Cart-item.reducer';
+
+const rootReducer = combineReducers({
+    ItemListReducer: ItemListReducer,
+    CartItemReducer: CartItemReducer
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
