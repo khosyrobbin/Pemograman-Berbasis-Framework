@@ -4,18 +4,12 @@ import { AuthContext } from "./Auth";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import Sepatu from "../img/shoes.png";
+import "./Home.css";
 
 const Home = () => {
     const { currentUser } = useContext(AuthContext);
     return (
         <>
-
-        <div className="home-page">
-            <center>
-            <h1>WELCOME!</h1>
-            <p>Do you want to Log In or Sign Up?</p>
-            {currentUser ? (
-=======
             <html>
                 <body>
                     <div className="container">
@@ -58,23 +52,6 @@ const Home = () => {
                     </div>
                 </body>
             </html>
-
-            {/* {currentUser ? (
-
-                <p>
-                    You are logged - <Link to="/dashboard">View Dashboard</Link>
-                </p>
-            ) : (
-                <p>
-                    <Link to="/login">Log In</Link> or <Link to="/signup">Sign Up</Link>
-                </p>
-
-            )}
-            </center>
-        </div>
-=======
-            )} */}
-
         </>
     );
 };
